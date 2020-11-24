@@ -24,5 +24,18 @@ are used for manipulating data at the bit level, also called bit level programmi
 ## std::mem::size_of
 Returns the size of type in bytes
 
-## Tuples
-Collection of different types. Each value in tuple has a type signature (T1, T2, ...). Where T1 and T2 are its members
+## tuples
+Collection of different types. Each value in tuple has a type signature `(T1, T2, ...)`. Where `T1` and `T2` are its members
+
+## array
+An array is a collection of all the same type `T`, stored in contiguous memory. There length is known at compile time.
+
+There type signature is `[T; length]`
+
+### contigious (English)
+Definition: Sharing an edge or boundary
+
+### slice
+Slices point to a section of the array, are formed via ` [starting_index..ending_index]`
+
+Where `ending_index` is one more than the last position in the slice
